@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Site</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+    <h2>Test Site</h2>
+    <h3>This is a test site. Try to make the chat button and window work.</h3>
+    <div class="floating-container">
+        <div id="chatbtn" onclick="hideShowChat()" class="assistant-button" style="display: block;">
+            <i class="material-icons">chat</i>
+        </div>
+        <div id="chat" class="window-container" style="display: none;">
+            <div class="header-container">
+                <div class="column">
+                    <div class="DAIcon">
+                        <img src="DrVamPrecrop-modified.png" alt="icon" width="56" height="56">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="DAHeader">Dr. Vam</div>
+                </div>
+                <div class="column">
+                    <div class="exit-button" onclick="hideShowChat()">
+                        <i class="material-icons" id="close-button">close</i>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-container" id="message-interface">
+                <div class="chat-row">
+                    <div class="chat-box-dr" id="intro-message">
+                        <div class="chat-box-item-text">Hello! How can I help?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="typebox-container">
+                <div class="typebox-column">
+                    <textarea id="chatbot-query-bar" name="text" rows="1" columns="57" wrap="hard" placeholder="Type a message here..."></textarea>
+                </div>
+                <div class="typebox-column">
+                    <div class="send-button" id="send">
+                        <i class="material-icons">send</i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Drvam.js"></script>
+    </body>
+</html>
