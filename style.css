@@ -1,0 +1,26 @@
+.parent-container {
+    background-color: #3a9aea;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distributes space between flex items */
+    align-items: stretch;
+    padding: 0 20px; /* Optional: adds padding inside the parent container */
+}
+
+.container-type-1, .container-type-2 {
+    max-width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container-type-1 {
+    align-self: flex-start; /* Aligns the first container to the left */
+}
+
+.container-type-2 {
+    align-self: flex-start; /* Aligns the second container to the right */
+    margin-left: auto; /* Pushes this container to the right */
+}
