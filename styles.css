@@ -98,6 +98,7 @@
 #chatbot-query-bar {
     font-size: 14px; /* Reduced font size */
     padding: 10px;
+    resize:none;
 }
 #chatbot-query-bar::placeholder{
     place-self:center;
