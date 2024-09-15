@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fed975a-0124-4614-ad73-834d2d36be43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drvam.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drvam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="9fed975a-0124-4614-ad73-834d2d36be43" name="Changes" comment="as working on zetacrest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,11 +68,24 @@
       <updated>1725632380282</updated>
       <workItem from="1725632381081" duration="60823000" />
       <workItem from="1726059706905" duration="2676000" />
-      <workItem from="1726154115454" duration="3368000" />
+      <workItem from="1726154115454" duration="3783000" />
     </task>
+    <task id="LOCAL-00001" summary="as working on zetacrest">
+      <option name="closed" value="true" />
+      <created>1726390843765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726390843765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="as working on zetacrest" />
+    <option name="LAST_COMMIT_MESSAGE" value="as working on zetacrest" />
   </component>
 </project>
