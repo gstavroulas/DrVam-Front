@@ -13,27 +13,30 @@
     z-index:11111111111;
 }
 .floating-container {
-    position:fixed;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 60px;
-    height:60px;
-    margin: 85px 25px;
+    height: 60px;
+    margin: 20px;
     z-index: 111111111;
 }
+
 .floating-container:hover .assistant-button{
     transform: translatey(-5px);
     transition: all 0.3s;
 }
-.window-container{
-    position:fixed;
-    bottom:0;
-    right:0;
-    width:700px;
-    height: 600px;
-    margin: 35px 25px;
+.window-container {
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    width: 90vw; /* Adjusts to 90% of the viewport width */
+    max-width: 350px; /* Keeps it within a maximum width */
+    height: 70vh; /* Adjusts to 70% of the viewport height */
+    max-height: 600px; /* Keeps it within a maximum height */
+    margin: 50px 25px;
     border: transparent;
-    border-radius:90%;
+    border-radius: 10px;
 }
 .header-container{
     position:relative;
@@ -41,6 +44,7 @@
     width:100%;
     height:10%;
     top:0;
+    padding-left: 10px; /* Adds space from the left edge */
     align-self:center;
     display: table;
     border-top-left-radius:10px;
@@ -55,19 +59,20 @@
     align-self:center;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
+    margin: 0px; /* Adjust this value as needed */
+    padding: 10px; /* Adjust this value to add space inside */
 }
-.chat-container{
-    position:relative;
-    width:inherit;
-    height:80%;
-    background-color:white;
+.chat-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px); /* Subtracts height of header and typebox */
+    background-color: white;
     border: solid 10px #c9eeff;
-    box-sizing:border-box;
-    display:block;
-    padding:20px;
+    box-sizing: border-box;
+    padding: 10px;
     overflow-y: auto;
-    flex-direction:column;
 }
+
 .column{
     float:left;
     place-content:center;
@@ -90,39 +95,21 @@
     place-self:center;
     margin:auto;
 }
-#chatbot-query-bar{
-    position:relative;
-    width:100%;
-    height:60%;
-    outline:none;
-    border:transparent;
-    background-color:transparent;
-    font-size:16px;
-    font-family: "Roboto", sans-serif;
-    z-index:1111;
-    resize:none;
-    top: 10px;
-    left:20px;
-    word-break: break-all;
-    -ms-word-break:break-all;
-    overflow-wrap: break-word;
-    line-height:16px;
-    overflow-y:auto;
-    flex:1;
-    box-sizing:border-box;
-    border:none;
+#chatbot-query-bar {
+    font-size: 14px; /* Reduced font size */
+    padding: 10px;
 }
 #chatbot-query-bar::placeholder{
     place-self:center;
     margin:auto;
 }
-.DAHeader{
-    text-align:center;
+.DAHeader {
+    text-align: center;
     color: black;
-    font-family:"Roboto", sans-serif;
-    font-size:32px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px; /* Reduced size */
     font-weight: bold;
-    margin-top:16px;
+    margin-top: 10px; /* Reduced margin */
 }
 .typebox-column{
     height:100%;
@@ -225,7 +212,7 @@
     height:100%;
     display:flex;
     font-family: "Roboto", sans-serif;
-    font-size:16px;
+    font-size:14px;
 }
 #close-button{
     cursor:pointer;
@@ -281,7 +268,26 @@
         transform: translateY(-10px);
     }
 }
+@media (max-width: 768px) {
+    .window-container {
+        width: 70vw; /* Makes the container more responsive on small screens */
+        height: 70vh;
+        max-width: none;
+        max-height: none;
+    }
+}
 
+@media (max-width: 480px) {
+    .window-container {
+        width: 90vw;
+        height: 80vh;
+        border-radius: 0; /* Remove border radius on very small screens */
+    }
+
+    .chat-container {
+        padding: 10px;
+    }
+}
 
 
 

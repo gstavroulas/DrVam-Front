@@ -3,24 +3,24 @@ let chat = document.getElementById("chat");
 let chatbot= 0;
 
 function hideShowChat(){
-   if(chat.style.display === "none"){
-       chat.style.display = "block";
-       if (chatbot === 0) {
-           chatbot = 1;
-           let introMessage = document.getElementById("intro-message");
-           introMessage.offsetHeight;
-           introMessage.classList.add("show");
-       }
-   }
-   else {
-       chat.style.display = "none";
-   }
-   if(chatbtn.style.display === "none"){
-       chatbtn.style.display = "block";
-   }
-   else {
-       chatbtn.style.display = "none";
-   }
+    if(chat.style.display === "none"){
+        chat.style.display = "block";
+        if (chatbot === 0) {
+            chatbot = 1;
+            let introMessage = document.getElementById("intro-message");
+            introMessage.offsetHeight;
+            introMessage.classList.add("show");
+        }
+    }
+    else {
+        chat.style.display = "none";
+    }
+    if(chatbtn.style.display === "none"){
+        chatbtn.style.display = "block";
+    }
+    else {
+        chatbtn.style.display = "none";
+    }
 }
 function scrollToBottom() {
     const chatContainer = document.querySelector('.chat-container');
@@ -56,7 +56,7 @@ function event(event){
 
         let typingIndicator = showTypingIndicator();
 
-        fetch('http://localhost:5000/api/data', {
+        fetch('https://gandro7.pythonanywhere.com/drVam_jksdhfs432254rffjkhajks/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
