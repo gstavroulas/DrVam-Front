@@ -1,16 +1,20 @@
 .assistant-button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    cursor: pointer;
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    background-color:#c9eeff;
-    text-align:center;
-    line-height: 80px;
-    z-index:11111111111;
+    background-color: #c9eeff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    z-index: 11111111111;
+    padding-top: 13px;
+}
+.chat-icon {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
 }
 .floating-container {
     position: fixed;
@@ -98,6 +102,7 @@
 #chatbot-query-bar {
     font-size: 14px; /* Reduced font size */
     padding: 10px;
+    resize:none;
 }
 #chatbot-query-bar::placeholder{
     place-self:center;
@@ -288,6 +293,4 @@
         padding: 10px;
     }
 }
-
-
 
