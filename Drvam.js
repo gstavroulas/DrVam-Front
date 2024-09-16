@@ -33,15 +33,16 @@ function createChatMessage(sender, message){
     let newMessage = document.createElement("div");
     chatContainer.appendChild(newChatRow);
     newChatRow.appendChild(newMessage);
+    let newMessageText = document.createElement("div");
+    newMessageText.className = "chat-box-item-text";
     if(sender===1){
         newMessage.className = "chat-box-user";
+        newMessageText.textContent = message;
     }
     else{
         newMessage.className = "chat-box-dr";
+        newMessageText.innerHTML = message;
     }
-    let newMessageText = document.createElement("div");
-    newMessageText.className = "chat-box-item-text";
-    newMessageText.textContent = message;
     newMessage.appendChild(newMessageText);
     newMessage.offsetHeight;
     newMessage.classList.add("show");
